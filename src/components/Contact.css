@@ -1,0 +1,47 @@
+.contact-div {
+  width: 95%;
+  background-color: #424242;
+  border-bottom: solid 1px black;
+  border-radius: 8px;
+  border-style: solid;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  margin-right: 2%;
+}
+.buttons button {
+  width: 7vw;
+  height: 7vh;
+  border-radius: 5%;
+  font-size: 1.5rem;
+  background-color: #616161;
+  color: #eeeeee;
+}
+.contact-image {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.image {
+  border-radius: 50%;
+  width: 90px;
+  align-self: center;
+}
+.contact-name {
+  font-size: 1.8rem;
+  margin-right: 55%;
+  color: #eeeeee;
+width: 15px;
+}

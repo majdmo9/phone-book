@@ -1,0 +1,39 @@
+.info {
+  height: 100vh;
+  display: flex;
+  background-color: #bdbdbd;
+}
+.info-inner {
+  background-color: #424242;
+  width: 70%;
+  margin: auto;
+  color: #eeeeee;
+  border-radius: 8px;
+  border-style: solid;
+  border: 1px #757575 solid;
+  height: 20vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.info-list {
+  width: 95%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 550;
+}
+.closebtn-div {
+  width: 90%;
+  text-align: right;
+}
+.close-btn  {
+
+  font-size: 2rem;
+  border-radius: 50%;
+  background-color: #424242;
+  color: #eeeeee;
+}
