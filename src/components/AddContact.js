@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const AddContact = ({onChange, onClose }) => {
+const AddContact = ({ onChange, onClose }) => {
   // using use state to save the contact data in
   const [Contact, setContact] = useState({
     name: "",
@@ -31,7 +31,7 @@ const AddContact = ({onChange, onClose }) => {
           <label htmlFor="phone">Phone: </label>
           <input
             autoComplete="off"
-            type="text"
+            type="number"
             name="phone"
             onChange={handleChange}
             value={phone}
@@ -64,8 +64,10 @@ const AddContact = ({onChange, onClose }) => {
               // if user adds all these data then contact can be added
               if (name && email && phone && image) {
                 onChange(Contact);
+              } else {
+                window.alert("You have to fill all the fields!");
+                onClose();
               }
-              onClose();
             }}
           >
             Add

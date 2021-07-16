@@ -11,6 +11,9 @@ const Info = ({ contact, onClose }) => {
           </button>
         </div>
         <ul className="info-list">
+          <li>
+            <img src={contact.image} alt="" />
+          </li>
           <li>{contact.name}</li>
           <li>{contact.phone}</li>
           <li>{contact.email}</li>

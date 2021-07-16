@@ -4,7 +4,7 @@ import Info from "./Info";
 import Edit from "./Edit";
 import AddContact from "./AddContact";
 const Book = () => {
-  const [search, setSearch] = useState("");//state for search
+  const [search, setSearch] = useState(""); //state for search
   const [selectedContact, setSelectedContact] = useState(null); //state for contact info
   const [selectedToEdit, setSelectedToEdit] = useState(null); // state for editing contact
   const [selectedToDelete, setSelectedToDelete] = useState([]); // state to delete contact
@@ -63,7 +63,7 @@ const Book = () => {
           onChange={(contact) => {
             setContacts({
               ...contacts,
-              [selectedToEdit]: contact,
+              [Object.keys(contacts).length + 1]: contact,
             });
           }}
           onClose={() => {

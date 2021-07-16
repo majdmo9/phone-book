@@ -32,7 +32,7 @@ const Edit = ({ contact, onChange, onClose }) => {
           <label htmlFor="phone">Phone: </label>
           <input
             autoComplete="off"
-            type="text"
+            type="number"
             name="phone"
             onChange={handleChange}
             value={phone}
